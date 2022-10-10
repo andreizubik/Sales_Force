@@ -7,18 +7,16 @@
     </listeners>
     <test name="Thread #1">
         <classes>
-            <class name="tests.LoginTest" />
-            <class name="tests.ProductTest" />
+            <class name="tests.AccountCreationTest" />
+            <class name="tests.ContactCreationTest" />
             <parameter name="browser" value="chrome"></parameter>
         </classes>
     </test> <!-- Test -->
     <test name="Thread #2">
         <classes>
-            <class name="tests.ProductTest" />
-            <class name="tests.CheckoutTest" />
+            <class name="tests.AccountCreationTest" />
+            <class name="tests.ContactCreationTest" />
             <parameter name="browser" value="firefox"></parameter>
         </classes>
     </test> <!-- Test -->
 </suite>
-
-        <!-- Thread - поток. Разбить по потокам примерно равно по времени -->
